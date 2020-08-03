@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #3D3D3D;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 195px;
+    color: white;
+}
+
+.menu {
+    margin-right: 158px;
+}
+
+.menu__text {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-right: 45px;
+}
+
+.menu__text:after {
+    background-color: white;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.menu__text:hover:after,
+.menu__text:focus:after {
+    width: 100%;
+}
+
+.phone {
+    display: flex;
+    margin-right: 153px;
+}
+
+.phone-num {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*SLIDER */
+.promo {
+    min-height: 447px;
+}
+
+.promo-carousel {
+    min-height: 447px;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+}
+
+.promo-carousel__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.slider-arrows {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+}
+
+.next-arrow {
+    width: 45.53px;
+    height: 45.53px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    right: 20%;
+}
+
+.prev-arrow {
+    width: 45.53px;
+    height: 45.53px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 20%;
+}
+
+.promo__dot {
+    list-style: none;
+    margin-right: 15px;
+    z-index: 10;
+    min-width: 16.57px;
+    min-height: 16.57px;
+    border-radius: 100%;
+    background: #C4C4C4;
+}
+
+.promo-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+.promo__dot:last-child {
+    margin-right: 0;
+}
+
+.promo__dot_active {
+    background: #494949;
+}
